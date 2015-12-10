@@ -9,4 +9,13 @@ describe 'user visits homepage and finds an input box' do
 
     end
   end
+
+  context 'user inputs number into form field' do
+    it 'takes you to the quiz show page' do
+      visit root_path
+      fill_in 'Size', with: '10'
+      click_link_or_button 'Create Quiz'
+      expect(current_path).to eq(quiz_path)
+    end
+  end
 end
