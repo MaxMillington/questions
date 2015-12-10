@@ -11,6 +11,7 @@ class Seed
     seed = Seed.new
     seed.generate_strands
     seed.generate_standards
+    seed.generate_questions
 
   end
 
@@ -29,18 +30,18 @@ class Seed
   end
 
   def generate_questions
-    Question.create(difficulty: 0.7, strand_id: 1)
-    Question.create(difficulty: 0.6, strand_id: 1)
-    Question.create(difficulty: 0.8, strand_id: 1)
-    Question.create(difficulty: 0.2, strand_id: 1)
-    Question.create(difficulty: 0.5, strand_id: 1)
-    Question.create(difficulty: 0.4, strand_id: 1)
-    Question.create(difficulty: 0.9, strand_id: 2)
-    Question.create(difficulty: 0.1, strand_id: 2)
-    Question.create(difficulty: 0.3, strand_id: 2)
-    Question.create(difficulty: 0.6, strand_id: 2)
-    Question.create(difficulty: 0.4, strand_id: 2)
-    Question.create(difficulty: 0.2, strand_id: 2)
+    Question.create(difficulty: 0.7, standard_id: 1)
+    Question.create(difficulty: 0.6, standard_id: 1)
+    Question.create(difficulty: 0.8, standard_id: 1)
+    Question.create(difficulty: 0.2, standard_id: 1)
+    Question.create(difficulty: 0.5, standard_id: 1)
+    Question.create(difficulty: 0.4, standard_id: 1)
+    Question.create(difficulty: 0.9, standard_id: 2)
+    Question.create(difficulty: 0.1, standard_id: 2)
+    Question.create(difficulty: 0.3, standard_id: 2)
+    Question.create(difficulty: 0.6, standard_id: 2)
+    Question.create(difficulty: 0.4, standard_id: 2)
+    Question.create(difficulty: 0.2, standard_id: 2)
   end
 
 end
