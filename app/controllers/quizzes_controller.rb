@@ -14,7 +14,6 @@ class QuizzesController < ApplicationController
     if @quiz.save
       questions_array = @quiz.generate_questions(quiz_params['size'].to_i)
       @quiz.questions << questions_array
-      binding.pry
       redirect_to quiz_path(@quiz)
     else
       redirect_to new_quiz_path
