@@ -14,6 +14,7 @@ gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
+gem 'font-awesome-rails'
 gem 'bootstrap-sass', '~>3.3.5'
 gem 'bootswatch-sass'
 gem 'bootstrap3-rails'
@@ -48,6 +49,7 @@ group :development, :test do
   gem 'database_cleaner'
   gem 'launchy'
   gem 'web-console', '~> 2.0'
+  gem 'rspec-rails'
 end
 
 group :development do
