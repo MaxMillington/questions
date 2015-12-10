@@ -32,16 +32,16 @@ class Seed
   def generate_questions
     Question.create(difficulty: 0.7, standard_id: 1)
     Question.create(difficulty: 0.6, standard_id: 1)
-    Question.create(difficulty: 0.8, standard_id: 1)
-    Question.create(difficulty: 0.2, standard_id: 1)
-    Question.create(difficulty: 0.5, standard_id: 1)
-    Question.create(difficulty: 0.4, standard_id: 1)
-    Question.create(difficulty: 0.9, standard_id: 2)
-    Question.create(difficulty: 0.1, standard_id: 2)
-    Question.create(difficulty: 0.3, standard_id: 2)
-    Question.create(difficulty: 0.6, standard_id: 2)
-    Question.create(difficulty: 0.4, standard_id: 2)
-    Question.create(difficulty: 0.2, standard_id: 2)
+    Question.create(difficulty: 0.8, standard_id: 2)
+    Question.create(difficulty: 0.2, standard_id: 3)
+    Question.create(difficulty: 0.5, standard_id: 3)
+    Question.create(difficulty: 0.4, standard_id: 3)
+    Question.create(difficulty: 0.9, standard_id: 4)
+    Question.create(difficulty: 0.1, standard_id: 4)
+    Question.create(difficulty: 0.3, standard_id: 5)
+    Question.create(difficulty: 0.6, standard_id: 5)
+    Question.create(difficulty: 0.4, standard_id: 5)
+    Question.create(difficulty: 0.2, standard_id: 6)
   end
 
 end
