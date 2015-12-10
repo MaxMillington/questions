@@ -4,16 +4,10 @@
 <div class="container">
   <div class="row">
     <div class="col-md-6 col-md-offset-3">
-      <h1>Hello. Please input the number of questions you need for your test</h1>
+      <h1>Hello. Please click the link below to create a new quiz.</h1>
 
-      <%= form_for(@quiz) do |f| %>
 
-          <%= f.label :size %>
-          <%= f.email_field :size, class: 'form-control' %>
-
-          <br>
-          <%= f.submit "Create Quiz", class: 'btn btn-primary' %>
-      <% end %>
+      <%= link_to "New Quiz", new_quiz_path, class: "btn btn-primary"%>
 
     </div>
   </div>
