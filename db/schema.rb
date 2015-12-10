@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151210215624) do
+ActiveRecord::Schema.define(version: 20151210221649) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -22,6 +22,13 @@ ActiveRecord::Schema.define(version: 20151210215624) do
   end
 
   add_index "questions", ["standard_id"], name: "index_questions_on_standard_id", using: :btree
+
+  create_table "quizzes", force: :cascade do |t|
+    t.integer "question_id"
+    t.integer "size"
+  end
+
+  add_index "quizzes", ["question_id"], name: "index_quizzes_on_question_id", using: :btree
 
   create_table "standards", force: :cascade do |t|
     t.string  "name"
@@ -36,5 +43,6 @@ ActiveRecord::Schema.define(version: 20151210215624) do
   end
 
   add_foreign_key "questions", "standards"
+  add_foreign_key "quizzes", "questions"
   add_foreign_key "standards", "strands"
 end

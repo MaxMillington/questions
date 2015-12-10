@@ -6,6 +6,7 @@ describe 'user visits homepage and finds an input box' do
     it 'works' do
       visit root_path
       expect(page).to have_content('Hello')
+
     end
   end
 end
